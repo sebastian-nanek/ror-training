@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 class Vehicle
     attr_accessor :open_doors_count
 
@@ -29,3 +31,9 @@ class Coach < Vehicle
         6
     end
 end
+
+pc = PassengerCar.new
+c = Coach.new
+pc.open_doors
+pc.close_doors
+6.times { pc.open_doors }
